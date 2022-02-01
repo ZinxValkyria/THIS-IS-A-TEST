@@ -45,16 +45,49 @@ const genMessage3 =()=>{
     randNum = Math.floor(rand)
     switch(randNum){
         case 1:
-            message.push('do NOT forget to post the mail!')
+            message.push('do NOT forget to post the mail!'+ artStr3)
+            message
             break;
         case 2:
-            message.push( 'remember to pick up cigs!')
+            message.push( 'remember to pick up cigs!'+artStr2)
             break;
          default:
-            message.push('let me know when your on your way! ')
+            message.push('let me know when your on your way! ' +artStr1)
              break
     }
 } 
+ const artStr1 = String.raw`
+
+          //  ||\ \
+    _____//___||_\ \___
+    )  _          _    \
+    |_/ \________/ \___|
+   ___\_/________\_/______
+   
+
+`;
+const artStr2 = String.raw`
+
+                    (  )/  
+                    )(/
+ ________________  ( /)
+()__)____________)))))  
+
+`;
+const artStr3 = String.raw`
+
+__________________
+|\                /|
+| \              / | 
+| /\____________/\ | 
+|/                \| 
+|__________________| 
+
+
+`;
+
+
+
 
 genMessage1()
 genMessage2()
