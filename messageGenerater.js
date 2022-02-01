@@ -1,16 +1,19 @@
+
+const message =[]
+
 //Generate random number between 0 &3 and assign each outcome to a phrase
 const genMessage1 =()=>{
     rand = Math.random()*3;
     randNum = Math.floor(rand)
     switch(randNum){
         case 1:
-            return 'Good luck '
+            message.push('Good luck ')
             break;
         case 2:
-            return 'Bad luck '
+            message.push('Bad luck ')
             break;
          default:
-            return 'Dont call me if you are '
+            message.push('Dont call me if you are ')
              break
     }
 } 
@@ -23,13 +26,13 @@ const genMessage2 =()=>{
     randNum = Math.floor(rand)
     switch(randNum){
         case 1:
-            return 'on your journey, '
+            message.push('on your journey, ')
             break;
         case 2:
-            return 'driving, wherever that is, '
+            message.push('driving, wherever that is, '
             break;
          default:
-            return 'with your girlfriend, '
+            message.push('with your girlfriend, ')
              break
     }
 } 
@@ -42,16 +45,16 @@ const genMessage3 =()=>{
     randNum = Math.floor(rand)
     switch(randNum){
         case 1:
-            return 'do NOT forget to post the mail!'
+            message.push('do NOT forget to post the mail!')
             break;
         case 2:
-            return 'remember to pick up cigs!'
+            message.push( 'remember to pick up cigs!')
             break;
          default:
-            return 'let me know when your on your way! '
+            message.push('let me know when your on your way! ')
              break
     }
 } 
 //Print full random 
-console.log(genMessage1()+genMessage2()+genMessage3())
+console.log(message.join(''))
 
