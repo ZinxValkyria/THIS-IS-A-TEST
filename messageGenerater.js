@@ -29,7 +29,7 @@ const genMessage2 =()=>{
             message.push('on your journey, ')
             break;
         case 2:
-            message.push('driving, wherever that is, '
+            message.push('driving, wherever that is, ')
             break;
          default:
             message.push('with your girlfriend, ')
@@ -55,6 +55,9 @@ const genMessage3 =()=>{
              break
     }
 } 
-//Print full random 
+
+genMessage1()
+genMessage2()
+genMessage3()
 console.log(message.join(''))
 
